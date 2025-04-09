@@ -9,10 +9,10 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 const dbConfig = {
-    user: 'randy',
-    password: '!@#$56QWERty',
-    server: 'sqlserverbtkdvtlqzxpha.database.windows.net',
-    database: 'sampledb',
+    user: 'fnzfllwqzw',
+    password: 'k1Ag54s2DMOAr4$e',
+    server: 'randywebapp-server.mysql.database.azure.com',
+    database: 'randywebapp-database',
     options: {
         encrypt: true
     }
