@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const sql = require('mssql');
+const sql = require('mysql2/promise'); // Use mysql2 for promise support
 const path = require('path');
 
 const app = express();
