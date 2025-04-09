@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registered Students</title>
+</head>
+<body>
+  <h2>List of Registered Students</h2>
+  <table border="1">
+    <tr>
+      <th>Name</th><th>Email</th><th>Student ID</th><th>Program</th><th>Enrollment Date</th>
+    </tr>
+    <% students.forEach(student => { %>
+      <tr>
+        <td><%= student.FullName %></td>
+        <td><%= student.Email %></td>
+        <td><%= student.StudentID %></td>
+        <td><%= student.Program %></td>
+        <td><%= student.EnrollmentDate.toISOString().split('T')[0] %></td>
+      </tr>
+    <% }) %>
+  </table>
+</body>
+</html>

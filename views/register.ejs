@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WIT Student Registration</title>
+</head>
+<body>
+  <h2>Register a Student</h2>
+  <form action="/register" method="POST">
+    <label>Full Name:</label><br>
+    <input type="text" name="fullname" required><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br>
+
+    <label>Student ID:</label><br>
+    <input type="text" name="studentid" required><br>
+
+    <label>Program:</label><br>
+    <select name="program">
+      <option>IT</option>
+      <option>Health</option>
+      <option>Business</option>
+      <option>Hospitality</option>
+    </select><br>
+
+    <label>Enrollment Date:</label><br>
+    <input type="date" name="date" required><br><br>
+
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
